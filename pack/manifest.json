@@ -9,6 +9,7 @@
   },
   "modules": [
     {
+      "description": "Builder's Toolkit Resources",
       "type": "resources",
       "uuid": "6a17ce24-391e-4bf0-be94-24b161889efe",
       "version": [0, 1, 0]
@@ -18,6 +19,11 @@
     "authors": [
       "Gokul A.S"
     ],
+    "generated_with": {
+      "Builder's Toolkit": [
+        "0.1.0"
+      ]
+    },
     "license": "Custom",
     "url": "https://github.com/G0ku1-0/builders-toolkit"
   }
