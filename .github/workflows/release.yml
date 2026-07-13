@@ -1,0 +1,26 @@
+name: Release MCPack
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build MCPack
+        run: |
+          cd pack
+          zip -r ../BuildersToolkit.mcpack .
+
+      - name: Publish Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: BuildersToolkit.mcpack

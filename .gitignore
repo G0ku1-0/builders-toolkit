@@ -1,0 +1,16 @@
+# Build outputs
+*.mcpack
+*.mcaddon
+*.zip
+
+# Android
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+
+# IDE
+.vscode/
+.idea/
